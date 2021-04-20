@@ -18,3 +18,5 @@ function bubbleSort(numbers: number[]): number[] {
 let a = [10, 3, 1, 4, 2];
 let result = bubbleSort(a);
 console.log(result);
+
+export { bubbleSort }
