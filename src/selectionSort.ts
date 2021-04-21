@@ -1,19 +1,19 @@
 function selectionSort(numbers: number[]): number[] {
     for (let i = 0; i < numbers.length; i++) {
-        let min = a[i];
+        let min = numbers[i];
         let k = i;
         for (let j = i + 1; j < numbers.length; j++) {
 
             if (numbers[j] < min) {
-                min = a[j];
+                min = numbers[j];
                 k = j;
             }
 
         }
 
-        let tmp = a[i];
-        a[i] = a[k];
-        a[k] = tmp;
+        let tmp = numbers[i];
+        numbers[i] = numbers[k];
+        numbers[k] = tmp;
     }
     return numbers
 }
@@ -21,5 +21,10 @@ function selectionSort(numbers: number[]): number[] {
 let a = [10, 3, 1, 4, 2];
 let result = selectionSort(a);
 console.log(result);
+
+let b = [10, 3, 1, 9, 6, 8, 2, 4, 5];
+let resultB = selectionSort(b);
+console.log(resultB);
+
 
 export { selectionSort };
