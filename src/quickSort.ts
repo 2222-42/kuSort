@@ -1,4 +1,3 @@
-
 function quickSortSub(numbers: number[], startID, endID: number) {
     let pivot = numbers[(startID + endID) / 2 | 0];
     let left = startID;
