@@ -56,4 +56,4 @@ let bb = [10, 3, 1, 9, 6, 8, 2, 4, 5];
 let resultBB = quasibBubbleSort(bb);
 console.log(bb);
 
-export { bubbleSort, }
+export { bubbleSort, quasibBubbleSort, quasiBubbleSortSub }
